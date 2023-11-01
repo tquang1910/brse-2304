@@ -1,4 +1,4 @@
-import jdk.nashorn.internal.parser.Scanner;
+package Excercise;
 
 public class Ex1 {
 
