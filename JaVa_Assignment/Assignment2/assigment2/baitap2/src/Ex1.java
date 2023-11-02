@@ -1,5 +1,3 @@
-package Excercise;
-
 public class Ex1 {
 
     public void ques1(Account acc2) {
@@ -132,11 +130,11 @@ public class Ex1 {
         Account[] accounts = {acc1, acc2, acc3};
         for (int i = 0; i < accounts.length; i++) {
             if (i !=1 ){
-            System.out.println("Email: " + accounts[i].email + "\n" + "FullName: " + accounts[i].fullName + "\n"
-                    + "DepartmentName: " + accounts[i].department.name);
+                System.out.println("Email: " + accounts[i].email + "\n" + "FullName: " + accounts[i].fullName + "\n"
+                        + "DepartmentName: " + accounts[i].department.name);
+            }
         }
     }
-}
     public void ques14(Account acc1, Account acc2, Account acc3){
         System.out.println("======Question14======");
         Account[] accounts = {acc1,acc2,acc3};
@@ -172,7 +170,7 @@ public class Ex1 {
         Department[] departments = {depa1, depa2, depa3};
         while (i < departments.length){
             System.out.println("Id: " + departments[i].id + "; Name: " + departments[i].name);
-        i++;
+            i++;
         }
     }
 

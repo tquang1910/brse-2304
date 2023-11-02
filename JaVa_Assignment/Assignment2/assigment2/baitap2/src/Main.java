@@ -1,7 +1,4 @@
-
-import java.lang.invoke.SwitchPoint;
 import java.time.LocalDate;
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -102,12 +99,20 @@ public class Main {
 //        ex1.ques16Of12(acc1, acc2, acc3);
 //        ex1.ques16Of13(acc1, acc2, acc3);
 
+        Exercise2 exercise2 = new Exercise2();
+        exercise2.question1();
+        exercise2.question2();
+        exercise2.question3();
+        exercise2.question4();
+//        exercise2.question5();
 
-
+        Excercise3 excercise3 = new Excercise3();
+        excercise3.question1();
+        excercise3.question2();
 
 
         Excercise4 excercise4 = new Excercise4();
-        excercise4.question03();
+//        excercise4.question03();
     }
 }
 

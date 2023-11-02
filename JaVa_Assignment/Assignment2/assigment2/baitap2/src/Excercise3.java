@@ -1,5 +1,3 @@
-package Excercise;
-
 import assignment1.Exam;
 
 import java.time.LocalDate;
@@ -11,12 +9,17 @@ import java.util.Locale;
 public class Excercise3 {
 
     public static void question1() {
-        LocalDateTime today = LocalDateTime.now();
-        Locale vn = new Locale("vi", "VN");
-        DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL)
-                .withLocale(vn);
-        String formated = formatter.format(today);
-        System.out.println("Today is : " + formated);
+        Exam exam = new Exam();
+        exam.title = "Java Core";
+        exam.createddate = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(new Locale("vi", "VN"));
+        System.out.println("Ngày thi là " + exam.createddate.format(formatter));
     }
-
+    public static void question2(){
+        Exam exam = new Exam();
+        exam.createddate = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-hh-mm-ss");
+        System.out.println("Ngày thi là: " + exam.createddate.format(formatter));
+    }
 }
